@@ -1,0 +1,31 @@
+
+PATH_BAM = '/bams/'
+PATH_QC  = '/qc/'
+PATH_LOG = '/logs/'
+
+
+rule create_header:
+    message:
+        "creating samfile header"
+    input:
+        PATH_BAM + "{sample}.mq20.bam"
+    output:
+        PATH_QC + "{sample}.mq20.sort.header.txt"
+    log:
+        PATH_LOG + '{sample}.mq20.sort.header.log'
+    shell:
+        """
+            samtools view -H {input} | grep '@SQ' |sort > {output} 2> {log}
+        """
+
+rule paste_header:
+    message:
+        "making a file to check genome build"
+    input:
+        PATH_BAM + "{sample}.mq20.sort.header.txt"
+    output:
+        PATH_QC + "{sample}.mq20.header.check.txt"
+    shell:
+        """
+            paste wz_chip_seq_correct_header.txt {input} > {output}
+        """
