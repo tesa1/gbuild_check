@@ -4,7 +4,7 @@ This is a simple snakemake-based pipeline used in the Zwart lab at the Netherlan
 of ChIP-sequencing experiments. Header information from a correctly aligned file (from previous experiments) is used as a comparison to check the alignment information using the header of the newly aligned files.
 
 The pipeline performs the following steps to produce a final text file with ending 'check':
-  - Download the correct header information and sort it.
+  - Download the correct header information (sorted)
   - Create sorted header information files from the newly aligned *.mq20.bam files
   - For each *.mq20.bam file, paste the header information from that file next to the correct header file information
   
