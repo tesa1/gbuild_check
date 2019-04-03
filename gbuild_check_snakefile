@@ -1,7 +1,7 @@
 
-PATH_BAM = '/bams/'
-PATH_QC  = '/qc/'
-PATH_LOG = '/logs/'
+PATH_BAM = '../bams/'
+PATH_QC  = '../qc/'
+PATH_LOG = '../logs/'
 
 
 rule create_header:
