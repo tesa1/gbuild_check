@@ -17,7 +17,7 @@ rule create_header:
         PATH_QC + "{sample}.mq20.sort.header"
     shell:
         """
-            samtools view -H {input} | grep '@SQ' | sort > {output} 2> {log}
+            samtools view -H {input} | grep '@SQ' | sort > {output}
         """
 
 rule paste_header:
