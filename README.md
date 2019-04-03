@@ -2,7 +2,7 @@
 
 This is a simple snakemake-based pipeline used in the Zwart lab at the Netherlands Cancer Intitute to check the genome build 
 of ChIP-sequencing experiments. A correctly aligned file (from previous experiments) is used as a comparison to check the 
-header of the newly aligned files.
+alignment information using the header of the newly aligned files.
 
 The pipeline performs the following steps to produce a final text file:
   - Download the correct header information and sort it.
