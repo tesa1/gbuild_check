@@ -26,3 +26,5 @@ The pipeline performs the following steps to produce a final text file:
  snakemake -s gbuild_check_snakefile
  ```
  
+Final check file should be in qc directory with the ending 'check'
+
