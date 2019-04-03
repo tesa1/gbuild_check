@@ -14,7 +14,7 @@ The pipeline performs the following steps to produce a final text file:
  folder and a 'qc' folder. The pipeline relies on the folder configuration from the peak-calling so don't move anything until
  you have finished with the Genome Build Check.
  
- Navigate to the 'qc' folder and download the repository:
+ Navigate to the folder where you ran your peak-calling and download the repository:
  
  ```bash
  git clone https://github.com/tesa1/gbuild_check
