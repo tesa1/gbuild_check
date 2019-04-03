@@ -23,6 +23,6 @@ The pipeline performs the following steps to produce a final text file:
  The file needed for comparison will be downloaded along with the repository.
  
  ```bash
- snakemake -s gbuild_check
+ snakemake -s gbuild_check_snakefile
  ```
  
