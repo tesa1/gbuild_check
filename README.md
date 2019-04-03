@@ -27,6 +27,6 @@ The pipeline performs the following steps to produce a final text file with endi
  snakemake -s gbuild_check_snakefile
  ```
  
-Final text file should be in qc directory with the ending 'check'. 
+The final text file should be in qc directory with the ending 'check'. 
 Your files should look like the 'good.check' file in the repository. An example of an incorrect alignment is also shown in 
 the 'bad.check' file in the repository. 
